@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BullPhone</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .moving-text {
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #ffcc00; 
+      padding: 10px 0;  
+      text-align: center; 
+    }
+
+    .moving-text p {
+      display: inline-block;
+      animation: moveText 10s linear infinite;
+      margin: 0; 
+    }
+
+    @keyframes moveText {
+      0% {
+        transform: translateX(100%); 
+      }
+      100% {
+        transform: translateX(-100%); 
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BullPhone</h1>
+    <nav>
+      <ul>
+        <li><a href="bullphone.html">Inicio</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Productos.html">Productos</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <div class="moving-text">
+    <p>¡Bienvenidos a BullPhone! ¡Ofertas exclusivas solo hoy! Compra ahora y aprovecha grandes descuentos.</p>
+  </div>
+  <div class="promo-banner">
+    <p>¡Aprovecha nuestros descuentos especiales! 20% de descuento en tu primera compra.</p>
+  </div>
+  
+  <section id="products" class="section products-section">
+    <h2>Productos Destacados</h2>
+    <div class="product">
+      <img src="https://i.blogs.es/8a6d9c/650_1000_topic_iphone_3gs-1/450_1000.png" alt="Celular modelo 1">
+      <h3>Modelo BullPhone X1</h3>
+      <p>Disfruta de un smartphone con tecnología de punta y un diseño innovador, ideal para todos los momentos del día.</p>
+      <p class="price">$699.99</p> 
+      <button onclick="buyNow('BullPhone X1'); window.location.href='Contacto.html';">Comprar</button>
+    </div>
+    
+    <div class="product">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_666307-MLU78447774504_082024-O.webp" alt="Celular modelo 2">
+      <h3>Modelo BullPhone X2</h3>
+      <p>Potencia y estilo en un solo dispositivo. Con cámaras avanzadas y rendimiento para tareas diarias y más.</p>
+      <p class="price">$799.99</p> 
+      <button onclick="buyNow('BullPhone X2'); window.location.href='Contacto.html';">Comprar</button>
+    </div>
+  
+    <div class="product">
+      <img src="https://clevercel.mx/cdn/shop/files/apple-iphone-14-pro-max-1_1.jpg?v=1697574974" alt="Celular modelo 10">
+      <h3>Modelo BullPhone X8 Pro Mx</h3>
+      <p>Rendimiento al más alto nivel, con una cámara excepcional y una pantalla que redefine la experiencia visual.</p>
+      <p class="price">$1599.99</p> 
+      <button onclick="buyNow('BullPhone X8 Pro Mx'); window.location.href='Contacto.html';">Comprar</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 BullPhone. Todos los derechos reservados.</p>
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

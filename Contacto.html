@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BullPhone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>BullPhone</h1>
+    <nav>
+      <ul>
+        <li><a href="bullphone.html">Inicio</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Productos.html">Productos</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="moving-text">
+    <p>Vuelve pronto!</p>
+  </div>
+<section id="contact" class="section contact-section">
+    <h2>Contacto</h2>
+    <form id="contactForm">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required><br><br><br>
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required><br><br><br>
+      <label for="Direccion">Direccion:</label>
+      <textarea id="Direccion" name="Direccion" required></textarea><br><br><br>
+      <label for="Telefono">Telefono:</label>
+      <input type="Telefono" id="Telefono" name="Telefono" required><br><br><br>
+
+    </fieldset><br> <label for="sucursal">BullPhone Comprado: </label> <select
+    name="sucursal" id="tienda" onchange="obtenerdatos">
+    <option id="op1" value="BullPhone X1" selected>BullPhone X1</option>
+    <option id="op2" value="BullPhone X2">BullPhone X2</option>
+    <option id="op3" value="BullPhone X3">BullPhone X3</option>
+    <option id="op4" value="BullPhone X4">BullPhone X4</option>
+    <option id="op5" value="BullPhone X5">BullPhone X5</option>
+    <option id="op5" value="BullPhone X5">BullPhone X6</option>
+    <option id="op5" value="BullPhone X5">BullPhone X7</option>
+    <option id="op5" value="BullPhone X5">BullPhone X7 Pro Max</option>
+    <option id="op5" value="BullPhone X5">BullPhone X8</option>
+    <option id="op5" value="BullPhone X5">BullPhone X8 Pro Max</option>
+</select><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+<footer>
+    <p>&copy; 2024 BullPhone. Todos los derechos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
